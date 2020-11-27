@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 2,
+  "name": "Greyscale",
+  "version": "1.0",
+
+  "description": "Sets certain social media sites to greyscale",
+
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/*",
+        "*://*.twitter.com/*",
+        "*://*.instagram.com/*",
+        "*://*.youtube.com/*"
+      ],
+      "js": ["myScript.js"]
+    }
+  ]
+
+}
